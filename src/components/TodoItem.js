@@ -2,8 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { handleComplete, handleDelete } from "../store/reducers/todoSlice";
 
-const TodoItem = (props) => {
-  const { text, id, completed } = props;
+const TodoItem = ({ text, id, completed }) => {
   const dispatch = useDispatch();
 
   return (

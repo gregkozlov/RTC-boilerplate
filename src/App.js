@@ -19,7 +19,7 @@ function App() {
           <div className="w-1/3">
             <h1 className="font-bold my-5">Redux Toolkit Todo App</h1>
             <Form />
-            {todos.map(({ id, text, completed }) => {
+            {todos?.map(({ id, text, completed }) => {
               return <TodoItem key={id} id={id} text={text} completed={completed} />;
             })}
           </div>
